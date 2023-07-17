@@ -1,0 +1,57 @@
+body {
+    margin: 0rem;
+    font-family: 'Lato';
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #141414;
+    color: white;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes background-pan {
+    from {
+        background-position-x: 0%;
+    }
+
+    to {
+        background-position-x: -200%;
+    }
+}
+
+
+.gradienttext {
+    animation-name: background-pan;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #FF1E1E,#FFE1E1,#FF1E1E);
+    background-size: 200%;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big {
+    font-size: 15em;
+}
+
+.bold {
+    font-weight: bold;
+}
